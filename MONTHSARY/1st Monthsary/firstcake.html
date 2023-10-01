@@ -60,7 +60,7 @@
                 
             </div>
             <div class="absolute cursor-pointer -bottom-7 drop-shadow-2xl right-14">
-                <iconify-icon onclick="playVideo('VIDEOS/FIRST CAKE.mp4')" class="text-3xl hover:bg-red-700 duration-300 bg-red-600 p-4 rounded-full" icon="ph:play-fill" style="color: #ffff;"></iconify-icon>
+                <iconify-icon onclick="playVideo()" class="text-3xl hover:bg-red-700 duration-300 bg-red-600 p-4 rounded-full" icon="ph:play-fill" style="color: #ffff;"></iconify-icon>
             </div>
         </div>
         
@@ -84,17 +84,11 @@
           <div
             class="bg-black  w-full h-full z-20 flex justify-center items-center relative"
           >
-            <video
-              id="myVideo"
-              class="w-[80%]"
-              autoplay
-              controls
-            >
-              <source src="videos/" type="video/mp4" />
-            </video>
+          <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/MR4tTwZg7Cg?si=ID6fyKeg9zVxCmnDs" title="YouTube video player" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            
             <div class="absolute top-3 right-3">
+            <a href="firstcake.html">
               <svg
-                onclick="stopVideo()"
                 class="cursor-pointer"
                 xmlns="http://www.w3.org/2000/svg"
                 width="45"
@@ -106,7 +100,10 @@
                   d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59L7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12L5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"
                 />
               </svg>
+            </a>
+            
             </div>
+        
           </div>
       </div>
         <script src="../../videoPlayer.js"></script>

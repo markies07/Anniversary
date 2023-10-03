@@ -64,7 +64,7 @@
                 
             </div>
             <div class="absolute cursor-pointer -bottom-7 drop-shadow-2xl right-14">
-                <iconify-icon onclick="playVideo('VIDEOS/FIRST MECH KBOARD.mp4')" class="text-3xl hover:bg-red-700 duration-300 bg-red-600 p-4 rounded-full" icon="ph:play-fill" style="color: #ffff;"></iconify-icon>
+                <iconify-icon onclick="playVideo()" class="text-3xl hover:bg-red-700 duration-300 bg-red-600 p-4 rounded-full" icon="ph:play-fill" style="color: #ffff;"></iconify-icon>
             </div>
         </div>
         
@@ -87,14 +87,7 @@
           <div
             class="bg-black  w-full h-full z-20 flex justify-center items-center relative"
           >
-            <video
-              id="myVideo"
-              class="w-full"
-              autoplay
-              controls
-            >
-              <source src="videos/" type="video/mp4" />
-            </video>
+           
             <div class="absolute top-3 right-3">
               <svg
                 onclick="stopVideo()"
